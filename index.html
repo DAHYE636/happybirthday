@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JO JAESEOK BIRTHDAY HOUSE 내가 있는데 조재석이 왜 좆 돼 in INCHEON </title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+
+    
+</head>
+<body>
+    <header>
+        <h1>
+            <div class="img_box">
+                <img src="./logo.png" alt="필사즉생">
+            </div>
+        </h1>
+    </header>
+    <div class="wrap">
+        <div class="title">
+            <h2>조재석 생일 기념 세트 나눔 예약폼 .ᐟ .ᐟ</h2>
+        </div>
+        <div class="content">
+            <div class="warning">
+                <h3>폼 작성기간이 아닙니다.</h3>
+                <h4>해당 폼은 2240-08-23 08:23부터 폼 작성이 가능합니다.</h4>
+            </div>
+            <div class="img_box"><img src="./info.png" alt="조재석 생일 집 나눔 인포"></div>
+            <div class="form">
+                <div class="check1 check">
+                    <p>- 주문 상품 선택</p>
+                    <div class="check_content">
+                        <span>조재석 생일 기념 세트</span>
+                        <div>
+                            <button class="btn minus_btn">-</button>
+                            <input type="text" value="0" id="val" readonly>
+                            <button class="btn plus_btn">+</button>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    
+                    let val1 = $("#val").val()
+                    $(".minus_btn").on("click", function(){
+
+                        if(val1 <= 0){
+                            alert('응 나도 안 주고 싶었어');
+                        }else{
+                            val1--;
+                            $("#val").val(val1);
+                        }
+                    });
+                    $(".plus_btn").on("click", function(){
+                        
+                        if(val1 >= 2){
+                            alert('욕심도 많다!');
+                        }else{
+                            val1++;
+                            $("#val").val(val1);
+                        }
+                    });
+
+                </script>
+                <div class="check2 check">
+                    <p>- 배송 방법 선택</p>
+                    <div class="check_content">
+                        <div>
+                            <input type="radio" id="method1" name="method" checked>
+                            <label for="method1">직접 수령</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="method2" name="method">
+                            <label for="method2">줘도 안 가짐</label>
+                        </div>
+
+                        <script>
+                            $("#method2").on("click", function(){
+                                alert("응 줄거야")
+                                $(this).prop("checked", false);
+                                $("#method1").prop("checked", true);
+                            })
+                        </script>
+                    </div>
+                </div>
+                <div class="check3 check">
+                    <p>- 개인정보 수집 동의</p>
+                    <div class="check_content">
+                        <b>
+                            상품 주문 및 배송을 위해 입력된 개인정보를 수집합니다.<br>
+                            수집한 개인정보는 주문과 배송이외의 목적으로는 사용하지 않으며, 전자상거래 등에서의 소비자 보호에 관한 법률에 따라 5년까지 보관합니다.<br>
+                            개인정보의 수집 및 이용에 대한 동의를 거부할 수 있으며, 이 경우 상품 주문이 어려울 수 있습니다.
+                        </b>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="btm">
+            <button class="confirm">제출</button>
+            <script>
+                $(".confirm").on("click", function(){
+                    alert('2024년 8월 24일 정아 집에서 만나요!')
+                })
+            </script>
+        </div>
+    </div>
+
+</body>
+</html>
