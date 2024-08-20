@@ -1,0 +1,139 @@
+img{width: 100%;}
+
+header{
+    padding: 10px 1.5%;
+    border-bottom: 1px solid #ddd;
+}
+header h1{width: 120px;}
+
+
+
+.wrap{
+    padding: 20px 0 100px;
+}
+
+
+
+.title{
+    padding: 30px;
+    background: #bf0000;
+}
+.title h2{
+    font-size: 25px;
+    color: #000;
+    font-weight:500;
+    text-align: center;
+    line-height: 1.6;
+    word-break: keep-all;
+}
+
+
+
+.content{
+    width: 97%;
+    max-width: 1200px;
+    min-width: 350px;
+    margin: auto;
+    padding: 50px 0 80px;
+}
+.warning{
+    padding: 30px 2.5%;
+    text-align: center;
+    background: #ddd;
+    border-radius: 10px;
+}
+.warning *{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.6;
+}
+.content .img_box{
+    max-width: 1000px;
+    margin: 30px auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+
+.form .check{
+    max-width: 1000px;
+    margin: 0 auto 30px;
+}
+.form .check p{
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+}
+.form .check_content{
+    display: flex;
+    align-items: center;
+    padding: 30px 10px;
+    background: #f6f6f6;
+    border-radius: 5px;
+}
+.form .check1 .check_content{
+    justify-content: space-between;
+}
+.form .check1 .check_content div{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.form .check1 span{
+    font-size: 14px;
+}
+.form .check1 button{
+    width: 25px;
+    height: 25px;
+    color: #333;
+    font-size: 16px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+.form .check1 input{
+    width: 75px;
+    height: 23px;
+    padding: 0 10px;
+    color: #333;
+    text-align: right;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.form .check2 .check_content{
+    justify-content: center;
+    gap: 20px;
+}
+.form .check2 .check_content div{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.form .check2 .check_content [type="radio"]{
+    margin: 0;
+}
+.form .check2 .check_content label{
+    font-size: 14px;
+}
+
+.form .check3 b{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+
+
+.btm button{
+    display: block;
+    width: 300px;
+    margin: auto;
+    padding: 15px;
+    color: #fff;
+    font-size: 20px;
+    background: #bf0000;
+    border-radius: 15px;
+}
